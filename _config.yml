@@ -19,7 +19,7 @@ navigation:
   url: /contact
 
 paginate:            5
-disqus:              #"your-disqus"
+disqus:              kienhui #"your-disqus"
 
 # Build settings
 markdown:            kramdown
