@@ -21,13 +21,15 @@
             h('h1', {}, entry.getIn(['data', 'title'])),
             bg ? h('img', {src: bg.toString()}) : null
           ),
+          h('div', {"className": "text"}, this.props.widgetFor('body'),
           h('p', {},
-            h('small', {}, "Written " + entry.getIn(['data', 'date']))
-          ),
-          h('div', {"className": "text"}, this.props.widgetFor('body'))
+            h('small', {}, "Written on" + entry.getIn(['data', 'date'])
+             )
+          ))
         );
       }
     });
+
     CMS.registerPreviewTemplate("post", PostPreview);
   </script>
 </body>
